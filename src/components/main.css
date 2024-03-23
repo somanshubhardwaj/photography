@@ -1,0 +1,35 @@
+.main{
+    background: url("https://colibriwp.com/blog/wp-content/uploads/2021/06/5243028.jpg") no-repeat center center fixed ; 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    height: 85vh;
+    width: 90vw;
+    backdrop-filter: blur(10px);
+    overflow-y: scroll;
+
+
+}
+.container::-webkit-scrollbar{
+    width: 0px;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+img{
+    width: 300px;
+ 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
